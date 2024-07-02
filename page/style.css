@@ -150,6 +150,8 @@ body {
 
 .spotify-playlists .list .item:hover {
   background-color: #252525;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .spotify-playlists .list .item img {
@@ -267,6 +269,11 @@ body {
   min-width: 120px;
   box-sizing: border-box;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Popular-artist .slider .slides .slide:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .Popular-artist .slider .slides .slide img {
@@ -330,10 +337,10 @@ body {
   border-radius: 5px;
   margin-right: 15px;
 }
-
 .main-container .right .queue-item .info {
   flex-grow: 1;
 }
+
 
 .main-container .right .queue-item .info .title {
   font-size: 1em;
@@ -351,6 +358,17 @@ body {
   color: #fff;
   cursor: pointer;
 }
+.queue .queue-item .favorite {
+  font-size: 20px;
+  color: #b3b3b3; 
+  cursor: pointer;
+}
+
+.queue .queue-item .favorite:hover {
+  color: #ff0000; 
+}
+
+
 
 .preview {
   position: fixed;
